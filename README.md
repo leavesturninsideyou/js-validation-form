@@ -1,3 +1,5 @@
-After cloning this repo, do the following:
+# js-form-validation
 
-`npm i`
+A tiny project consisting of a form with live inline validation using vanilla JavaScript. 
+
+You can find it here:
