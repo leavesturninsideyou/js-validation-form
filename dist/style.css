@@ -116,4 +116,6 @@ form > button {
 
     background-color: #a3a3a3;
     color: #262626;
+
+    cursor: pointer;
 }
