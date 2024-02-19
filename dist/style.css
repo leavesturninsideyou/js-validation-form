@@ -104,3 +104,16 @@ select {
 
     background-color: #f5f5f5;
 }
+
+form > button {
+    width: 50%;
+    margin: auto auto;
+    padding: 5px;
+    border: 1px solid #171717;
+    border-radius: 3px;
+
+    font-size: 1.6em;
+
+    background-color: #a3a3a3;
+    color: #262626;
+}
