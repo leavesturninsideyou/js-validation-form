@@ -108,14 +108,14 @@ select option {
     background-color: #fff;
 }
 
-input:invalid,
-select:invalid {
+input:not(:placeholder-shown):invalid,
+.invalid {
     border: 1px solid #ff0000;
     background-color: #ffdada;
 }
 
-input:invalid:focus,
-select:invalid:focus {
+input:not(:placeholder-shown):invalid:focus,
+.invalid:focus {
     outline-color: #ff4545;
 }
 
