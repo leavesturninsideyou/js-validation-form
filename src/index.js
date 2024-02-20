@@ -1,7 +1,6 @@
-import { confirmPwdError, mailError, pwdError, zipError } from "./inputErrors";
+import { confirmPwdError, countryError, mailError, pwdError, zipError } from "./inputErrors";
 
-const allInputs = document.querySelectorAll("input");
-const allSelects = document.querySelectorAll("select");
+const allInputs = document.querySelectorAll("input, select");
 
 const allSubmits = document.querySelectorAll(".submit");
 
@@ -21,12 +20,9 @@ allInputs.forEach((input) => {
         confirmPwdError(input, nearestErrorLabel);
     } else {
         nearestErrorLabel.textContent = "";
+        input.classList.remove("invalid");
     }
   });
-});
-
-allSelects.forEach(() => {
-
 });
 
 allSubmits.forEach((btn) => {
@@ -37,12 +33,17 @@ allSubmits.forEach((btn) => {
 
                 if (input.id === "mail") {
                     mailError(input, nearestErrorLabel);
+                } else if (input.id === "country") {
+                    countryError(input, nearestErrorLabel);
                 } else if (input.id === "zipcode") {
                     zipError(input, nearestErrorLabel);
                 } else if (input.id === "pwd") {
                     pwdError(input, nearestErrorLabel);
+                } else if (input.id === "confirm-pwd") {
+                    confirmPwdError(input, nearestErrorLabel);
                 }
-                // showErrors(input, "h", nearestErrorLabel);
+                
+                input.classList.add("invalid");
                 event.preventDefault();
             }
         })
