@@ -105,6 +105,21 @@ select {
     background-color: #f5f5f5;
 }
 
+select option {
+    background-color: #fff;
+}
+
+input:invalid,
+select:invalid {
+    border: 1px solid #ff0000;
+    background-color: #ffdada;
+}
+
+input:invalid:focus,
+select:invalid:focus {
+    outline-color: #ff4545;
+}
+
 form > button {
     width: 50%;
     margin: 10px auto;
