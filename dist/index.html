@@ -15,7 +15,7 @@
         <h1>Info</h1>
         <div class="form-row">
           <label for="mail">Email:</label>
-          <input type="email" name="mail" id="mail" required>
+          <input type="email" name="mail" id="mail" placeholder=" " pattern=".+@.+\..+" maxlength="320" minlength="5" required>
           <span class="error" aria-live="polite"> </span>
         </div>
         <div class="form-row">
@@ -264,17 +264,17 @@
         </div>
         <div class="form-row">
           <label for="zipcode">Zip Code:</label>
-          <input type="tel" name="zipcode" id="zipcode" required>
+          <input type="tel" name="zipcode" id="zipcode" placeholder=" " maxlength="12" required>
           <span class="error" aria-live="polite"> </span>
         </div>
         <div class="form-row">
           <label for="pwd">Password:</label>
-          <input type="password" name="pwd" id="pwd" required>
+          <input type="password" name="pwd" id="pwd" placeholder=" " required>
           <span class="error" aria-live="polite"> </span>
         </div>
         <div class="form-row">
           <label for="confirm-pwd">Confirm Password:</label>
-          <input type="password" name="confirm-pwd" id="confirm-pwd" required>
+          <input type="password" name="confirm-pwd" id="confirm-pwd" placeholder=" " required>
           <span class="error" aria-live="polite"> </span>
         </div>
         <button>Submit</button>
