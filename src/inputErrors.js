@@ -38,7 +38,9 @@ export function pwdError(input, nearestErrorLabel) {
 
     if (input.validity.valueMissing) {
         errorMessage.textContent = "You must enter a password.";
-    } 
+    } else {
+        errorMessage.textContent = "";
+    }
 }
 
 export function confirmPwdError(input, nearestErrorLabel) {
