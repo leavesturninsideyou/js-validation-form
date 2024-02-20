@@ -15,11 +15,12 @@
         <h1>Info</h1>
         <div class="form-row">
           <label for="mail">Email:</label>
-          <input type="email" name="mail" id="mail">
+          <input type="email" name="mail" id="mail" required>
         </div>
         <div class="form-row">
           <label for="country">Country:</label>
-          <select name="country" id="country">
+          <select name="country" id="country" required>
+            <option value="" disabled selected>--</option>
             <option value="Afghanistan">Afghanistan</option>
             <option value="Albania">Albania</option>
             <option value="Algeria">Algeria</option>
@@ -137,7 +138,7 @@
             <option value="Kyrgyzstan">Kyrgyzstan</option>
             <option value="Lao">Lao</option>
             <option value="Latvia">Latvia</option>
-            <option value="Lebanon" selected>Lebanon</option>
+            <option value="Lebanon">Lebanon</option>
             <option value="Lesotho">Lesotho</option>
             <option value="Liberia">Liberia</option>
             <option value="Libyan Arab Jamahiriya">Libyan Arab Jamahiriya</option>
@@ -261,15 +262,15 @@
         </div>
         <div class="form-row">
           <label for="zipcode">Zip Code:</label>
-          <input type="tel" name="zipcode" id="zipcode">
+          <input type="tel" name="zipcode" id="zipcode" required>
         </div>
         <div class="form-row">
           <label for="pwd">Password:</label>
-          <input type="password" name="pwd" id="pwd">
+          <input type="password" name="pwd" id="pwd" required>
         </div>
         <div class="form-row">
           <label for="confirm-pwd">Confirm Password:</label>
-          <input type="password" name="confirm-pwd" id="confirm-pwd">
+          <input type="password" name="confirm-pwd" id="confirm-pwd" required>
         </div>
         <button>Submit</button>
       </form>
